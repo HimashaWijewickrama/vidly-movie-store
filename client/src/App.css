@@ -1,0 +1,312 @@
+.App {
+  margin: 0px;
+}
+.cover-poster-item {
+  position: relative;
+  display: cover;
+}
+
+.cover-poster-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.cover-poster-text {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  width: 500px;
+}
+.cover-poster-text span {
+  position: relative;
+}
+.cover-poster-text span::before {
+  content: "";
+  color: #ff7f50;
+  animation: words 20s infinite;
+}
+.cover-poster-text span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #0e0e0e;
+  border-left: 2px solid #ff7f50;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+  to {
+    border-left: 2px solid #ff7f5000;
+  }
+}
+@keyframes words {
+  0%,
+  40% {
+    content: "Watch Now";
+  }
+  41%,
+  80% {
+    content: "Watch Latests";
+  }
+  81%,
+  100% {
+    content: "Watch Hits";
+  }
+  /* 81%,
+  100% {
+    content: "Enjoy Anywhere";
+  } */
+}
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
+.App-user {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  opacity: 0.7;
+  margin: 5px;
+  background-image: url("https://w.wallhaven.cc/full/0w/wallhaven-0w2de6.jpg");
+}
+.App-movie {
+  background-color: #0d0d0d;
+  margin: 0px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#title-section {
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(1, 1, 1, 0.37);
+  border-radius: 8px;
+}
+
+#view-detail-modal-header {
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#view-detail-modal-poster {
+  background-color: #232526;
+  max-height: 100px;
+}
+#view-detail-modal-body {
+  background-color: #232526;
+}
+.specific-input::placeholder {
+  color: rgb(148, 147, 147) !important;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+#view-detail-modal-footer {
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#addbtn-section {
+  background-color: #ffffff;
+}
+#title-text {
+  color: #ff6d09;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#subtitle-text {
+  color: #ff6d09;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.item-feature-card {
+  width: 18rem;
+  padding: 0rem;
+  margin-bottom: 2rem;
+  height: 45rem;
+  border: none;
+}
+.item-feature-card-body {
+  border: none;
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.item-feature-image {
+  height: 27rem;
+  border: none;
+}
+.item-feature-card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+  box-shadow: 0 0 10px 1px rgba(255, 109, 9, 1);
+}
+#item-feature-title {
+  color: #ff6d09;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+}
+#item-feature-card-body {
+  background-color: #2e2e2f;
+}
+.item-feature-key {
+  color: #dc5f00;
+  font-family: "Forum", serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+#item-feature-value {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+  background-color: transparent;
+}
+.item-feature-poster {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+  background-color: #2e2e2f;
+}
+.message {
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+}
+.error-msg-text {
+  color: rgb(172, 41, 41);
+}
+.footer-section {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+}
+.section-divider {
+  color: #ffffff;
+}
+.search-bar {
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+}
+.add-button {
+  display: flex;
+  padding: 10px;
+}
+#add-button-addon {
+  /* color: black; */
+  font-size: 15px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+}
+#search-text-box {
+  border: 2px solid #dc5f00;
+  background-color: transparent;
+  color: white;
+}
+#search-text-box::placeholder{
+  color: rgb(197, 195, 195) !important;
+  font-weight: lighter;
+  font-size: 16px;
+  font-family: "Forum", serif;
+}
+
+#search-addon {
+  background-color: #0d0d0d;
+  border: 2px solid #dc5f00;
+  color: white;
+}
+#search-addon:hover {
+  background-color: #dc5f00;
+}
