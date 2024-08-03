@@ -77,7 +77,7 @@ Install all the dependencies in client side.
 
 Let's see how it is working ! 😃
 
-[![Watch the video](https://img.youtube.com/vi/BISs88mwvfA/maxresdefault.jpg)](https://youtu.be/BISs88mwvfA)
+[![Watch the video](https://img.youtube.com/vi/nt18qzM5E7U/maxresdefault.jpg)](https://youtu.be/nt18qzM5E7U)
 
 
 
